@@ -408,7 +408,6 @@ def spectral_radius(m):
     :return:
     """
     eig = torch.eig(m)[0]
-    (eig[:,0]**2+eig[:,1]**2)**.5
     return torch.max((eig[:,0]**2+eig[:,1]**2)**.5).item()
 # end spectral_radius
 
